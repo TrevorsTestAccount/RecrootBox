@@ -1,8 +1,13 @@
-
-import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaFileAlt,
+  FaBabyCarriage
+} from "react-icons/fa";
 // Import image of your self here:
 //-- For best display purposes, your image should be sqaure (e.g. 300 X 300 px)
-import selfie from "./assets/trevor.png";
+import selfie from "./assets/puppy.jpeg";
 
 //Import images for your portfolio here:
 //-- For best display purposes, each of these images should have similar porportions
@@ -10,22 +15,17 @@ import selfie from "./assets/trevor.png";
 import recrootBox from "./assets/recrootBox_site.png";
 import campRank from "./assets/camprank_site.png";
 import blogApp from "./assets/blogapp-site.png";
-import taskyv from "./assets/taskyv_site.png";
+import ropeToy from "./assets/fav_toy.jpeg";
 import bookThinks from "./assets/bookThinks.png";
 
 import resume from "./assets/Resume.pdf";
 
-
 // Edit person info here
 // -- Bio is best kept to around 5 lines
-let firstName = "Trevor";
-let lastName = "Lane";
-let title = "Student / Software Developer";
-let bio = `Hey there, I'm currently studying computer science
-   at Brigham Young University and working as a Software
-   Engineering Intern at SimpleNexus.
-   Feel free to reach out, take a look at some things i've built
-   here, or checkout my code on github.`;
+let firstName = "Mr.";
+let lastName = "Puppy";
+let title = "Snack Eater / Squirrel Chaser";
+let bio = `The domestic dog (Canis lupus familiaris when considered a subspecies of the wolf or Canis familiaris when considered a distinct species)[5] is a member of the genus Canis (canines), which forms part of the wolf-like canids,[6] and is the most widely abundant terrestrial carnivore.[7][8][9][10][11] The dog and the extant gray wolf are sister taxa[12][13][14] as modern wolves are not closely related to the wolves that were first domesticated,[13][14] which implies that the direct ancestor of the dog is extinct.[15] The dog was the first species to be domesticated[14][16] and has been selectively bred over millennia for various behaviors, sensory capabilities, and physical attributes.[17]`;
 
 //Edit links to external accounts or items here (e.g. github, linkedIn, leetcode, resume, etc.)
 // -- For display purposes, it's best to use between 3 and 5 links, but if you add more or less,
@@ -35,27 +35,24 @@ let userIcons = true;
 
 let links = [
   {
-    name: "Email",
-    link: "mailto:trevor@trevorlane.net",
-    icon: FaEnvelope
+    name: "About Dogs",
+    link: "https://en.wikipedia.org/wiki/Dog",
+    icon: FaBabyCarriage
   },
   {
     name: "GitHub",
     link: "https://github.com/trevorhere",
     icon: FaGithub
-
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/hi-there-trevor-here/",
     icon: FaLinkedin
-
   },
   {
     name: "Resume",
     link: resume,
     icon: FaFileAlt
-
   }
 ];
 
@@ -63,14 +60,14 @@ let links = [
 // -- you can adjust the number of items as needed. For display purposes, it's best to use
 // -- multiples of 3.
 
-let portfolioTitle = "Recent Projects"
-let portfolioSectionBackgroundColor = "#003344"
+let portfolioTitle = "Favorite Toys";
+let portfolioSectionBackgroundColor = "#0EAD69";
 let portfolioItems = [
   {
-    imageUrl: taskyv,
-    title: "Taskyv",
-    description: "Sleek, sexy task manager",
-    link: "https://taskyv.herokuapp.com/"
+    imageUrl: ropeToy,
+    title: "Rope Toy",
+    description: "A really fun toy",
+    link: "https://en.wikipedia.org/wiki/Dog_toy"
   },
   {
     imageUrl: bookThinks,
@@ -98,10 +95,9 @@ let portfolioItems = [
   }
 ];
 
-
 // If you do not want the footer to be displayed (it just has a link to the github repo
 // -- for this template ) then you can set showFooter to false and it will go away.
-let showFooter = true;
+let showFooter = false;
 
 export {
   firstName,
